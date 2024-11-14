@@ -33,8 +33,8 @@
             saturation: 4 # [DYNAMIC]
             sharpness: 4 # [DYNAMIC]
             gamma: 8 # [DYNAMIC]
-            auto_exposure_gain: false # [DYNAMIC]
-            exposure: 10 # [DYNAMIC]
+            auto_exposure_gain: true # [DYNAMIC]
+            exposure: 80 # [DYNAMIC]
             gain: 100 # [DYNAMIC]
             auto_whitebalance: true # [DYNAMIC]
             whitebalance_temperature: 42 # [DYNAMIC] - [28,65] works only if `auto_whitebalance` is false
@@ -52,7 +52,7 @@
             apply_to_object_detection: true # Apply ROI to object detection processing
             apply_to_body_tracking: true # Apply ROI to body tracking processing
             apply_to_spatial_mapping: true # Apply ROI to spatial mapping processing
-
+        
         depth:
             depth_mode: "ULTRA" # Matches the ZED SDK setting: 'NONE', 'PERFORMANCE', 'QUALITY', 'ULTRA', 'NEURAL', 'NEURAL_PLUS' - Note: if 'NONE' all the modules that requires depth extraction are disabled by default (Pos. Tracking, Obj. Detection, Mapping, ...)
             depth_stabilization: 1 # Forces positional tracking to start if major than 0 - Range: [0,100]
